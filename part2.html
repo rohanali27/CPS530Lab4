@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width = device-width, initial-scale 1">
+
+		<title>Part 2</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  		<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
+
+		<style type="text/css">
+
+  		.leftside{
+  			background-image: url("http://nerdreactor.com/wp-content/uploads/2015/08/Void-1.jpg");
+  			background-position: center;
+  			height:100vh;
+  			text-align: center;
+  			color: white;
+  		}
+  		.rightside{background-color:#C0FFEE ;
+  			font-family: 'Antic';
+  			padding-left: 50px;
+
+  		}
+  		.welcome h1{
+  			padding-top: 20px;
+  			font-family: Bowlby One SC;
+  			font-size:85px;
+  			text-shadow: 2px 2px 4px #000000; 
+  		}
+  		.welcome p{
+  			font-family:  Antic;
+  			font-size:25px;
+  			color:#119EB4;
+  			font-weight: bold;
+  		}
+
+  		.form-group{
+  			width:70%;
+  		}
+  		.rightside h1{
+  			font-weight: bold;
+  		}
+  		.thankyou h2{
+  			color: white;
+  			padding-top: 150px;
+  			font-family: Bowlby One SC;
+  			font-size:35px;
+  			text-shadow: 2px 2px 4px #000000; 
+  			padding-left:150px; 
+  		}
+  		 
+
+  		</style>
+
+	</head>
+
+	<body>
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 leftside">
+				<div class="welcome">
+				<h1>Welcome !</h1>
+				<br>
+				<p>Become the Best<br>With the Best<br>Corsair.</p>
+				</div>	
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 rightside">
+				<br>
+				<h1>Getting Started...</h1>
+				<p>Create your FREE Account NOW!</p>
+			  	<form action="./cgi-bin/lab4-2.pl" method="post">
+					<div class="form-group">
+						<label for="firstName">First Name:</label>
+						<input type="text" name="firstName" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="firstName">Last Name:</label>
+						<input type="text" name="firstName" class="form-control">
+					</div>	
+					<div class="form-group">
+						<label for="country">Where are you from?:</label>
+						<br>North America<br>
+						<input type="radio" name="country" value="north america" class="form-control"> 
+						Europe<br>
+  						<input type="radio" name="country" value="Europe" class="form-control"> 
+  						Asia
+  						<input type="radio" name="country" value="Asia" class="form-control">  
+					</div>	
+
+					<br>
+					<label for="gender">Gender</label>
+  					<select name="country">
+  						<option value="male">Male</option>
+ 						<option value="female">Female</option>
+  						<option value="other">other</option>
+					</select>
+					<br>
+					<button type="submit" class="btn btn-primary">Create Account!</button>
+
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 rightside">
+						<div class="thankyou">
+							<h2>Thank you!</h2>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+	
